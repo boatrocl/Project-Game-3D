@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1sld4gohobaj"]
+
+[ext_resource type="Script" uid="uid://dnodmtu7nih5p" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="PackedScene" uid="uid://bkohki8qtkfw0" path="res://assets/kenney_minigolf-kit/Models/FBX format/ball-red.fbx" id="1_kelma"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2els"]
+rough = true
+bounce = 0.5
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y8w33"]
+radius = 0.0357063
+
+[node name="Player" type="RigidBody3D" groups=["player"]]
+mass = 50.0
+physics_material_override = SubResource("PhysicsMaterial_g2els")
+angular_damp = 1.0
+script = ExtResource("1_g2els")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_y8w33")
+
+[node name="ball-red" parent="." instance=ExtResource("1_kelma")]
+
+[node name="CameraPoint" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+top_level = true
+
+[node name="Camera3D" type="Camera3D" parent="CameraPoint"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+
+[node name="FallingRayCast" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.040668845, 0)
+top_level = true
+target_position = Vector3(0, -30, 0)
+
+[node name="FallingTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[connection signal="timeout" from="FallingTimer" to="." method="_on_falling_timer_timeout"]

@@ -1,0 +1,199 @@
+[gd_scene load_steps=66 format=3 uid="uid://dfamxtxch8obp"]
+
+[ext_resource type="PackedScene" uid="uid://d0ryjwwr7dgnj" path="res://scenes/tile_scenes/block.tscn" id="1_22md1"]
+[ext_resource type="PackedScene" uid="uid://dy2wfxpwb2o2j" path="res://scenes/tile_scenes/block_borders.tscn" id="2_pf5g6"]
+[ext_resource type="PackedScene" uid="uid://c3g67utf2v8oy" path="res://scenes/tile_scenes/bump.tscn" id="3_cgckx"]
+[ext_resource type="PackedScene" uid="uid://bhe6owbjs54ue" path="res://scenes/tile_scenes/bump_down.tscn" id="4_l5cnn"]
+[ext_resource type="PackedScene" uid="uid://com0db8e8730e" path="res://scenes/tile_scenes/bump_down_walls.tscn" id="5_5ou71"]
+[ext_resource type="PackedScene" uid="uid://ga47gwimwyh0" path="res://scenes/tile_scenes/bump_walls.tscn" id="6_qdigx"]
+[ext_resource type="PackedScene" uid="uid://2kkpamdrrc4b" path="res://scenes/tile_scenes/castle.tscn" id="7_0va3r"]
+[ext_resource type="PackedScene" uid="uid://dbt58um1c12bm" path="res://scenes/tile_scenes/club_blue.tscn" id="8_xa438"]
+[ext_resource type="PackedScene" uid="uid://cu2ox74ioy726" path="res://scenes/tile_scenes/corner.tscn" id="9_ls85q"]
+[ext_resource type="PackedScene" uid="uid://csdgb5b7mgi5y" path="res://scenes/tile_scenes/crest.tscn" id="10_ge77h"]
+[ext_resource type="PackedScene" uid="uid://bwkljh84cs4lw" path="res://scenes/tile_scenes/end.tscn" id="11_xi2ms"]
+[ext_resource type="PackedScene" uid="uid://b6yhcb638uh61" path="res://scenes/tile_scenes/gap.tscn" id="12_15xkk"]
+[ext_resource type="PackedScene" uid="uid://chfw4dqy67fyb" path="res://scenes/tile_scenes/hill_corner.tscn" id="13_ruiug"]
+[ext_resource type="PackedScene" uid="uid://yb55l7q3dq0" path="res://scenes/tile_scenes/hill_round.tscn" id="14_pjunv"]
+[ext_resource type="PackedScene" uid="uid://crgcdrg3ue4h4" path="res://scenes/tile_scenes/hill_square.tscn" id="15_xl7bu"]
+[ext_resource type="PackedScene" uid="uid://bvrdgw64u1b2s" path="res://scenes/tile_scenes/hole_open.tscn" id="16_aa5d5"]
+[ext_resource type="PackedScene" uid="uid://b8twikwb7f331" path="res://scenes/tile_scenes/hole_round.tscn" id="17_na36m"]
+[ext_resource type="PackedScene" uid="uid://b5rntykltf4aj" path="res://scenes/tile_scenes/hole_square.tscn" id="18_ljyxc"]
+[ext_resource type="PackedScene" uid="uid://chjvia7ip2wn8" path="res://scenes/tile_scenes/inner_corner.tscn" id="19_2f5ac"]
+[ext_resource type="PackedScene" uid="uid://tocwluwjqnjj" path="res://scenes/tile_scenes/narrow_block.tscn" id="20_kyb62"]
+[ext_resource type="PackedScene" uid="uid://c8efu4tvjqh64" path="res://scenes/tile_scenes/narrow_round.tscn" id="21_6l0v5"]
+[ext_resource type="PackedScene" uid="uid://bjiamlvoqb8ht" path="res://scenes/tile_scenes/narrow_square.tscn" id="22_yra8n"]
+[ext_resource type="PackedScene" uid="uid://bie12m02jog5e" path="res://scenes/tile_scenes/obstacle_block.tscn" id="23_ync6g"]
+[ext_resource type="PackedScene" uid="uid://bunqdib4jvdhs" path="res://scenes/tile_scenes/obstacle_diamond.tscn" id="24_b1brb"]
+[ext_resource type="PackedScene" uid="uid://dk61vk5307gmp" path="res://scenes/tile_scenes/obstacle_triangle.tscn" id="25_bocdq"]
+[ext_resource type="PackedScene" uid="uid://2hb71vtif6ht" path="res://scenes/tile_scenes/open.tscn" id="26_d56fi"]
+[ext_resource type="PackedScene" uid="uid://selp7yyutg4j" path="res://scenes/tile_scenes/ramp.tscn" id="27_4tni8"]
+[ext_resource type="PackedScene" uid="uid://0p1y8clgmnwe" path="res://scenes/tile_scenes/ramp_high.tscn" id="28_obapr"]
+[ext_resource type="PackedScene" uid="uid://bfrvyqyigoj0o" path="res://scenes/tile_scenes/ramp_low.tscn" id="29_ljjj0"]
+[ext_resource type="PackedScene" uid="uid://dam0rqg0w0kvm" path="res://scenes/tile_scenes/ramp_medium.tscn" id="30_nl4ky"]
+[ext_resource type="PackedScene" uid="uid://bq3481g8qnd3h" path="res://scenes/tile_scenes/ramp_sharp.tscn" id="31_g1hwp"]
+[ext_resource type="PackedScene" uid="uid://b2engye032056" path="res://scenes/tile_scenes/ramp_side.tscn" id="32_x1vv8"]
+[ext_resource type="PackedScene" uid="uid://cx7npkim2juaa" path="res://scenes/tile_scenes/ramp_square.tscn" id="33_arcrd"]
+[ext_resource type="PackedScene" uid="uid://bwmqjwr6cvcel" path="res://scenes/tile_scenes/round_corner_a.tscn" id="34_yg4m3"]
+[ext_resource type="PackedScene" uid="uid://bv2pj1t2prgfj" path="res://scenes/tile_scenes/round_corner_b.tscn" id="35_griem"]
+[ext_resource type="PackedScene" uid="uid://ci7chs6kxxpgh" path="res://scenes/tile_scenes/round_corner_c.tscn" id="36_0upnx"]
+[ext_resource type="PackedScene" uid="uid://chbf6d7pe1mho" path="res://scenes/tile_scenes/side.tscn" id="37_t7ghj"]
+[ext_resource type="PackedScene" uid="uid://etffw61ewdos" path="res://scenes/tile_scenes/skew_corner.tscn" id="38_avtir"]
+[ext_resource type="PackedScene" uid="uid://bdi5i7pye2gq3" path="res://scenes/tile_scenes/split.tscn" id="39_s0oep"]
+[ext_resource type="PackedScene" uid="uid://d0kjevsvmghbw" path="res://scenes/tile_scenes/split_start.tscn" id="40_badeg"]
+[ext_resource type="PackedScene" uid="uid://clcanjqlxonks" path="res://scenes/tile_scenes/split_t.tscn" id="41_w67ua"]
+[ext_resource type="PackedScene" uid="uid://k4jh2ux0k81j" path="res://scenes/tile_scenes/split_walls_to_open.tscn" id="42_0ni7a"]
+[ext_resource type="PackedScene" uid="uid://cmeuoy4ere77m" path="res://scenes/tile_scenes/square_corner_a.tscn" id="43_x2eao"]
+[ext_resource type="PackedScene" uid="uid://cjnpye41ki7rr" path="res://scenes/tile_scenes/start.tscn" id="44_piidv"]
+[ext_resource type="PackedScene" uid="uid://dw35ve3snhym8" path="res://scenes/tile_scenes/straight.tscn" id="45_ax22i"]
+[ext_resource type="PackedScene" uid="uid://bp6eajaxpbry5" path="res://scenes/tile_scenes/structure_gate.tscn" id="46_b1vgc"]
+[ext_resource type="PackedScene" uid="uid://dw52e6txndkhr" path="res://scenes/tile_scenes/structure_gates.tscn" id="47_glgj5"]
+[ext_resource type="PackedScene" uid="uid://bcfxhhtfgo37u" path="res://scenes/tile_scenes/structure_gate_building.tscn" id="48_vy6uu"]
+[ext_resource type="PackedScene" uid="uid://cu78mp0qdqhkt" path="res://scenes/tile_scenes/structure_gate_wide.tscn" id="49_i0kbh"]
+[ext_resource type="PackedScene" uid="uid://c1ytol2gmgvyk" path="res://scenes/tile_scenes/structure_windmill.tscn" id="50_ffom6"]
+[ext_resource type="PackedScene" uid="uid://cooaajhfk3ndn" path="res://scenes/tile_scenes/support.tscn" id="51_ddpbp"]
+[ext_resource type="PackedScene" uid="uid://l4fsibpmp0ug" path="res://scenes/tile_scenes/supports.tscn" id="52_t5ng0"]
+[ext_resource type="PackedScene" uid="uid://khreteuw1yk" path="res://scenes/tile_scenes/supports_bottom.tscn" id="53_h57pb"]
+[ext_resource type="PackedScene" uid="uid://bac84wa5it040" path="res://scenes/tile_scenes/supports_low.tscn" id="54_delhy"]
+[ext_resource type="PackedScene" uid="uid://btybe6tjdx146" path="res://scenes/tile_scenes/supports_low_bottom.tscn" id="55_n073i"]
+[ext_resource type="PackedScene" uid="uid://d1nuhgy0a144q" path="res://scenes/tile_scenes/support_bottom.tscn" id="56_fmqlx"]
+[ext_resource type="PackedScene" uid="uid://cch6br1o0lbgs" path="res://scenes/tile_scenes/support_low.tscn" id="57_dqgmm"]
+[ext_resource type="PackedScene" uid="uid://cogkjdt3dokvc" path="res://scenes/tile_scenes/support_low_bottom.tscn" id="58_fjwc2"]
+[ext_resource type="PackedScene" uid="uid://t063pvrer7j6" path="res://scenes/tile_scenes/tunnel_double.tscn" id="59_tiksf"]
+[ext_resource type="PackedScene" uid="uid://bogd67iyf0i4m" path="res://scenes/tile_scenes/tunnel_narrow.tscn" id="60_cg80q"]
+[ext_resource type="PackedScene" uid="uid://bmnxa2tpvxm0g" path="res://scenes/tile_scenes/tunnel_wide.tscn" id="61_7ww28"]
+[ext_resource type="PackedScene" uid="uid://kefmtjqc6uam" path="res://scenes/tile_scenes/walls_to_open.tscn" id="62_m8g1k"]
+[ext_resource type="PackedScene" uid="uid://cj3bhl3aux4j5" path="res://scenes/tile_scenes/wall_left.tscn" id="63_w0hvk"]
+[ext_resource type="PackedScene" uid="uid://dydi7qgpmj24p" path="res://scenes/tile_scenes/wall_right.tscn" id="64_y4iu6"]
+[ext_resource type="PackedScene" uid="uid://gyglis0oo0jr" path="res://scenes/tile_scenes/windmill.tscn" id="65_tmre7"]
+
+[node name="tileset" type="Node3D"]
+
+[node name="block" parent="." instance=ExtResource("1_22md1")]
+
+[node name="block-borders" parent="." instance=ExtResource("2_pf5g6")]
+
+[node name="bump" parent="." instance=ExtResource("3_cgckx")]
+
+[node name="bump-down" parent="." instance=ExtResource("4_l5cnn")]
+
+[node name="bump-down-walls" parent="." instance=ExtResource("5_5ou71")]
+
+[node name="bump-walls" parent="." instance=ExtResource("6_qdigx")]
+
+[node name="castle" parent="." instance=ExtResource("7_0va3r")]
+
+[node name="club-blue" parent="." instance=ExtResource("8_xa438")]
+
+[node name="corner" parent="." instance=ExtResource("9_ls85q")]
+
+[node name="crest" parent="." instance=ExtResource("10_ge77h")]
+
+[node name="end" parent="." instance=ExtResource("11_xi2ms")]
+
+[node name="gap" parent="." instance=ExtResource("12_15xkk")]
+
+[node name="hill-corner" parent="." instance=ExtResource("13_ruiug")]
+
+[node name="hill-round" parent="." instance=ExtResource("14_pjunv")]
+
+[node name="hill-square" parent="." instance=ExtResource("15_xl7bu")]
+
+[node name="hole-open" parent="." instance=ExtResource("16_aa5d5")]
+
+[node name="hole-round" parent="." instance=ExtResource("17_na36m")]
+
+[node name="hole-square" parent="." instance=ExtResource("18_ljyxc")]
+
+[node name="inner-corner" parent="." instance=ExtResource("19_2f5ac")]
+
+[node name="narrow-block" parent="." instance=ExtResource("20_kyb62")]
+
+[node name="narrow-round" parent="." instance=ExtResource("21_6l0v5")]
+
+[node name="narrow-square" parent="." instance=ExtResource("22_yra8n")]
+
+[node name="obstacle-block" parent="." instance=ExtResource("23_ync6g")]
+
+[node name="obstacle-diamond" parent="." instance=ExtResource("24_b1brb")]
+
+[node name="obstacle-triangle" parent="." instance=ExtResource("25_bocdq")]
+
+[node name="open" parent="." instance=ExtResource("26_d56fi")]
+
+[node name="ramp" parent="." instance=ExtResource("27_4tni8")]
+
+[node name="ramp-high" parent="." instance=ExtResource("28_obapr")]
+
+[node name="ramp-low" parent="." instance=ExtResource("29_ljjj0")]
+
+[node name="ramp-medium" parent="." instance=ExtResource("30_nl4ky")]
+
+[node name="ramp-sharp" parent="." instance=ExtResource("31_g1hwp")]
+
+[node name="ramp-side" parent="." instance=ExtResource("32_x1vv8")]
+
+[node name="ramp-square" parent="." instance=ExtResource("33_arcrd")]
+
+[node name="round-corner-a" parent="." instance=ExtResource("34_yg4m3")]
+
+[node name="round-corner-b" parent="." instance=ExtResource("35_griem")]
+
+[node name="round-corner-c" parent="." instance=ExtResource("36_0upnx")]
+
+[node name="side" parent="." instance=ExtResource("37_t7ghj")]
+
+[node name="skew-corner" parent="." instance=ExtResource("38_avtir")]
+
+[node name="split" parent="." instance=ExtResource("39_s0oep")]
+
+[node name="split-start" parent="." instance=ExtResource("40_badeg")]
+
+[node name="split-t" parent="." instance=ExtResource("41_w67ua")]
+
+[node name="split-walls-to-open" parent="." instance=ExtResource("42_0ni7a")]
+
+[node name="square-corner-a" parent="." instance=ExtResource("43_x2eao")]
+
+[node name="start" parent="." instance=ExtResource("44_piidv")]
+
+[node name="straight" parent="." instance=ExtResource("45_ax22i")]
+
+[node name="structure-gate" parent="." instance=ExtResource("46_b1vgc")]
+
+[node name="structure-gates" parent="." instance=ExtResource("47_glgj5")]
+
+[node name="structure-gate-building" parent="." instance=ExtResource("48_vy6uu")]
+
+[node name="structure-gate-wide" parent="." instance=ExtResource("49_i0kbh")]
+
+[node name="structure-windmill" parent="." instance=ExtResource("50_ffom6")]
+
+[node name="support" parent="." instance=ExtResource("51_ddpbp")]
+
+[node name="supports" parent="." instance=ExtResource("52_t5ng0")]
+
+[node name="supports-bottom" parent="." instance=ExtResource("53_h57pb")]
+
+[node name="supports-low" parent="." instance=ExtResource("54_delhy")]
+
+[node name="supports-low-bottom" parent="." instance=ExtResource("55_n073i")]
+
+[node name="support-bottom" parent="." instance=ExtResource("56_fmqlx")]
+
+[node name="support-low" parent="." instance=ExtResource("57_dqgmm")]
+
+[node name="support-low-bottom" parent="." instance=ExtResource("58_fjwc2")]
+
+[node name="tunnel-double" parent="." instance=ExtResource("59_tiksf")]
+
+[node name="tunnel-narrow" parent="." instance=ExtResource("60_cg80q")]
+
+[node name="tunnel-wide" parent="." instance=ExtResource("61_7ww28")]
+
+[node name="walls-to-open" parent="." instance=ExtResource("62_m8g1k")]
+
+[node name="wall-left" parent="." instance=ExtResource("63_w0hvk")]
+
+[node name="wall-right" parent="." instance=ExtResource("64_y4iu6")]
+
+[node name="windmill" parent="." instance=ExtResource("65_tmre7")]

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://gx4b5jiolkje"
+path="res://.godot/imported/square-corner-a.obj-cf5db78be4b83c0f2700d4a8ebeb65ea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/square-corner-a.obj-cf5db78be4b83c0f2700d4a8ebeb65ea.mesh"]
+
+source_file="res://assets/kenney_minigolf-kit/Models/OBJ format/square-corner-a.obj"
+dest_files=["res://.godot/imported/square-corner-a.obj-cf5db78be4b83c0f2700d4a8ebeb65ea.mesh", "res://.godot/imported/square-corner-a.obj-cf5db78be4b83c0f2700d4a8ebeb65ea.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

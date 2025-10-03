@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlipi6006gx3l"]
+
+[ext_resource type="PackedScene" uid="uid://73pbbc0iqccl" path="res://scenes/ingame_ui.tscn" id="1_c1ju0"]
+
+[node name="LevelNode" type="Node3D"]
+
+[node name="IngameUI" parent="." instance=ExtResource("1_c1ju0")]
