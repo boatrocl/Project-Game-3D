@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1sld4gohobaj"]
+
+[ext_resource type="PackedScene" uid="uid://bkohki8qtkfw0" path="res://kenney_minigolf-kit/Models/FBX format/ball-red.fbx" id="1_kelma"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y8w33"]
+radius = 0.0357063
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_y8w33")
+
+[node name="ball-red" parent="." instance=ExtResource("1_kelma")]
