@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq4vtp7mcqc0w"]
+
+[ext_resource type="Script" uid="uid://qrlngigvca5e" path="res://home.gd" id="1_tt30a"]
+[ext_resource type="FontFile" uid="uid://bhc5hpaciba16" path="res://omelette_font/assets/ttf/om_large_plain.ttf" id="2_1ey7h"]
+
+[node name="Home" type="Node2D"]
+script = ExtResource("1_tt30a")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 205.0
+offset_top = 487.0
+offset_right = 948.0
+offset_bottom = 575.0
+size_flags_horizontal = 4
+theme_override_fonts/normal_font = ExtResource("2_1ey7h")
+text = "           PRESS ANY BUTTON TO START"
