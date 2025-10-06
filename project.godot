@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Project Game 3D"
-run/main_scene="uid://chxtawd6j0tn3"
-config/features=PackedStringArray("4.5", "Forward Plus")
+run/main_scene="uid://c4cqdt2hdmyme"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]

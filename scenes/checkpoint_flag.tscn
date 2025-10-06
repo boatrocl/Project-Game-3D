@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://itoejoa45vye"]
+[gd_scene load_steps=6 format=3 uid="uid://itoejoa45vye"]
 
 [ext_resource type="PackedScene" uid="uid://dn8fn3rf5v1x8" path="res://assets/kenney_minigolf-kit/Models/GLB format/flag-blue.glb" id="1_lrk0d"]
-[ext_resource type="Script" uid="uid://bm1s734ty15i8" path="res://Scripts/checkpoint_flag.gd" id="2_sj8yo"]
+[ext_resource type="Script" uid="uid://bm1s734ty15i8" path="res://scripts/checkpoint_flag.gd" id="2_sj8yo"]
 [ext_resource type="PackedScene" uid="uid://s302c21yyqem" path="res://scenes/particles/confetti.tscn" id="3_4eoee"]
+[ext_resource type="AudioStream" uid="uid://b0uoppxfvbcgi" path="res://sound/goodresult-82807.mp3" id="4_wtrfk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sj8yo"]
 size = Vector3(1.2, 0.475, 1.2)
@@ -21,5 +22,8 @@ shape = SubResource("BoxShape3D_sj8yo")
 
 [node name="Spawnpoint" type="Marker3D" parent="." index="3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="4"]
+stream = ExtResource("4_wtrfk")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -5,6 +5,8 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	GameManager.game_started = false
+	$AudioStreamPlayer.play()
+	$AudioStreamPlayer.stream.set_loop(true)
 	$ColorRect/FinishTime.text = GameManager.str_total_game_time
 	GameManager.resetTimer()
 

@@ -1,11 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4cqdt2hdmyme"]
+[gd_scene load_steps=6 format=3 uid="uid://c4cqdt2hdmyme"]
 
 [ext_resource type="FontFile" uid="uid://bjpcq3eamka67" path="res://omelette_font/assets/ttf/om_thick_plain.ttf" id="1_dy3ie"]
-[ext_resource type="Script" uid="uid://d3gey34mpnbkd" path="res://Scripts/gameover.gd" id="2_2mkfd"]
+[ext_resource type="Script" uid="uid://d3gey34mpnbkd" path="res://scripts/gameover.gd" id="2_2mkfd"]
+[ext_resource type="AudioStream" uid="uid://caowemwdy25m0" path="res://sound/game-music-loop-7-145285.mp3" id="3_2mkfd"]
 
 [sub_resource type="Theme" id="Theme_h8i2o"]
 default_font = ExtResource("1_dy3ie")
 default_font_size = 24
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_dy3ie"]
+file = "res://omelette_font/BackgroundHome/mainmenumusic-gpfpwt.ogv"
 
 [node name="Gameover" type="Control"]
 layout_mode = 3
@@ -26,6 +30,21 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -321.0
+offset_top = -179.0
+offset_right = 1559.0
+offset_bottom = 861.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = SubResource("VideoStreamTheora_dy3ie")
+autoplay = true
+loop = true
+
 [node name="Label" type="Label" parent="ColorRect"]
 layout_mode = 1
 anchors_preset = 5
@@ -40,6 +59,36 @@ text = "You beat the game!
 
 Your finished time:"
 horizontal_alignment = 1
+
+[node name="NewGameButton" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -260.0
+offset_right = 100.0
+offset_bottom = -228.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "New Game"
+
+[node name="MainMenuButton" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -112.0
+offset_top = -193.0
+offset_right = 112.0
+offset_bottom = -161.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Main Menu"
 
 [node name="FinishTime" type="Label" parent="ColorRect"]
 layout_mode = 1
@@ -57,35 +106,13 @@ grow_vertical = 2
 text = "00:00:000"
 horizontal_alignment = 1
 
-[node name="MainMenuButton" type="Button" parent="ColorRect"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -112.0
-offset_top = -193.0
-offset_right = 112.0
-offset_bottom = -161.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "Main Menu"
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
 
-[node name="NewGameButton" type="Button" parent="ColorRect"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -100.0
-offset_top = -260.0
-offset_right = 100.0
-offset_bottom = -228.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "New Game"
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_2mkfd")
+autoplay = true
+parameters/looping = true
 
-[connection signal="pressed" from="ColorRect/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="ColorRect/NewGameButton" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="ColorRect/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
