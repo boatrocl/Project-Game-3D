@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://chxtawd6j0tn3"]
 
 [ext_resource type="FontFile" uid="uid://bjpcq3eamka67" path="res://omelette_font/assets/ttf/om_thick_plain.ttf" id="1_ekxnf"]
-[ext_resource type="Script" uid="uid://brwxayvdl5gsf" path="res://Scripts/home_ui.gd" id="2_bqqt6"]
+[ext_resource type="Script" uid="uid://brwxayvdl5gsf" path="res://scripts/home_ui.gd" id="2_bqqt6"]
 
 [sub_resource type="Theme" id="Theme_l1wbr"]
 default_font = ExtResource("1_ekxnf")

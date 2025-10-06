@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://tlb8ol8o5fnp"]
 
-[ext_resource type="Script" uid="uid://b7kkqg7ltstic" path="res://Scripts/map.gd" id="1_5uwmw"]
+[ext_resource type="Script" uid="uid://b7kkqg7ltstic" path="res://scripts/map.gd" id="1_5uwmw"]
 [ext_resource type="PackedScene" uid="uid://dlipi6006gx3l" path="res://scenes/level_node.tscn" id="2_hhgj5"]
 [ext_resource type="PackedScene" uid="uid://c1sld4gohobaj" path="res://scenes/player.tscn" id="3_v1brt"]
 [ext_resource type="MeshLibrary" uid="uid://dbhge4m52dsq3" path="res://tileset_test.tres" id="4_2m5da"]
