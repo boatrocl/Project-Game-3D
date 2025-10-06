@@ -1,6 +1,6 @@
 [gd_resource type="MeshLibrary" load_steps=392 format=4 uid="uid://dbhge4m52dsq3"]
 
-[ext_resource type="Texture2D" uid="uid://bfv0ivwlesgf2" path="res://assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png" id="1_kx6ys"]
+[ext_resource type="Texture2D" uid="uid://cxkw11ek2w34f" path="res://assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png" id="1_kx6ys"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vj3ua"]
 resource_name = "colormap"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://73pbbc0iqccl"]
 
 [ext_resource type="FontFile" uid="uid://bjpcq3eamka67" path="res://omelette_font/assets/ttf/om_thick_plain.ttf" id="1_031h6"]
-[ext_resource type="Script" uid="uid://bqxrne3el34yc" path="res://scripts/ingame_ui.gd" id="1_v3yap"]
+[ext_resource type="Script" uid="uid://bqxrne3el34yc" path="res://Scripts/ingame_ui.gd" id="1_v3yap"]
 
 [sub_resource type="Theme" id="Theme_h2rwu"]
 default_font = ExtResource("1_031h6")
