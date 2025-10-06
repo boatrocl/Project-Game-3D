@@ -10,6 +10,9 @@ func _ready() -> void:
 	game_started = false
 	total_game_time = 0.0
 
+func resetTimer():
+	total_game_time = 0.0
+
 func _physics_process(delta: float) -> void:
 	if game_started == true:
 		total_game_time += delta

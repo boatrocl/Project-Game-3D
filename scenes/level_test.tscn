@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://jjh63yydiqx8"]
 
-[ext_resource type="Script" uid="uid://b7kkqg7ltstic" path="res://Scripts/map.gd" id="1_d5kir"]
+[ext_resource type="Script" uid="uid://b7kkqg7ltstic" path="res://scripts/map.gd" id="1_d5kir"]
 [ext_resource type="MeshLibrary" uid="uid://dbhge4m52dsq3" path="res://tileset_test.tres" id="1_e73ws"]
 [ext_resource type="PackedScene" uid="uid://c1sld4gohobaj" path="res://scenes/player.tscn" id="2_vbogn"]
 [ext_resource type="PackedScene" uid="uid://dlipi6006gx3l" path="res://scenes/level_node.tscn" id="2_yvmk3"]
@@ -31,6 +31,7 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="FinishFlag" parent="Map" instance=ExtResource("4_plvai")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.50501, 0.138009, 2.45872)
+next_scene_path_name = "res://scenes/gameover.tscn"
 
 [node name="CheckpointFlag" parent="Map" instance=ExtResource("5_vkcgd")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.45391, 0.1258, 0.463148)

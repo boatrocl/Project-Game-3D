@@ -1,22 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://itoejoa45vye"]
+[gd_scene load_steps=5 format=3 uid="uid://itoejoa45vye"]
 
 [ext_resource type="PackedScene" uid="uid://dn8fn3rf5v1x8" path="res://assets/kenney_minigolf-kit/Models/GLB format/flag-blue.glb" id="1_lrk0d"]
 [ext_resource type="Script" uid="uid://bm1s734ty15i8" path="res://scripts/checkpoint_flag.gd" id="2_sj8yo"]
+[ext_resource type="PackedScene" uid="uid://s302c21yyqem" path="res://scenes/particles/confetti.tscn" id="3_4eoee"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sj8yo"]
-size = Vector3(1, 0.475, 1)
+size = Vector3(1.2, 0.475, 1.2)
 
 [node name="CheckpointFlag" instance=ExtResource("1_lrk0d")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 script = ExtResource("2_sj8yo")
 
-[node name="Area3D" type="Area3D" parent="." index="1"]
+[node name="Confetti" parent="." index="0" instance=ExtResource("3_4eoee")]
+
+[node name="Area3D" type="Area3D" parent="." index="2"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23730469, 0)
 shape = SubResource("BoxShape3D_sj8yo")
 
-[node name="Spawnpoint" type="Marker3D" parent="." index="2"]
+[node name="Spawnpoint" type="Marker3D" parent="." index="3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
