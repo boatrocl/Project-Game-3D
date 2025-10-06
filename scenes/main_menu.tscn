@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://chxtawd6j0tn3"]
+[gd_scene load_steps=6 format=3 uid="uid://chxtawd6j0tn3"]
 
 [ext_resource type="FontFile" uid="uid://bjpcq3eamka67" path="res://omelette_font/assets/ttf/om_thick_plain.ttf" id="1_ekxnf"]
 [ext_resource type="Script" uid="uid://brwxayvdl5gsf" path="res://scripts/home_ui.gd" id="2_bqqt6"]
+[ext_resource type="VideoStream" uid="uid://dh76tyc6kdd7m" path="res://omelette_font/BackgroundHome/mainmenumusic-gpfpwt.ogv" id="3_bqqt6"]
+[ext_resource type="AudioStream" uid="uid://cv7rjwl8ljcfh" path="res://omelette_font/BackgroundHome/relaxing-guitar-loop-2-398647.mp3" id="4_wu84c"]
 
 [sub_resource type="Theme" id="Theme_l1wbr"]
 default_font = ExtResource("1_ekxnf")
@@ -33,10 +35,56 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -250.0
-offset_top = -162.0
-offset_right = 250.0
+offset_left = -425.0
+offset_top = -174.0
+offset_right = 425.0
 offset_bottom = -139.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
 text = "PRESS ANY BUTTON TO START"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect/Label"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -507.99997
+offset_right = 835.0
+offset_bottom = 537.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+stream = ExtResource("3_bqqt6")
+speed_scale = 0.767
+autoplay = true
+loop = true
+
+[node name="Label2" type="Label" parent="ColorRect/Label"]
+light_mask = 0
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -437.5
+offset_top = -36.0
+offset_right = 437.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 35
+text = "PRESS ANY BUTTON TO START"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(580, 326)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wu84c")
+autoplay = true
+parameters/looping = true
