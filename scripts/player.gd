@@ -21,13 +21,15 @@ func camera_update():
 
 func moving_ball(delta):
 	if Input.is_action_pressed("up"):
-		angular_velocity.x -= rolling_force * delta
+		angular_velocity.x -= rolling_force * delta 
 	if Input.is_action_pressed("down"):
 		angular_velocity.x += rolling_force * delta
 	if Input.is_action_pressed("left"):
 		angular_velocity.z += rolling_force * delta
 	if Input.is_action_pressed("right"):
-		angular_velocity.z -= rolling_force * delta
+		angular_velocity.z -= rolling_force * delta 
+	
+	#print(linear_velocity)
 
 func falling_check():
 	$FallingRayCast.global_position = global_position
@@ -47,3 +49,4 @@ func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
 		linear_velocity = Vector3.ZERO
 		angular_velocity = Vector3.ZERO
 		fallen = false
+	

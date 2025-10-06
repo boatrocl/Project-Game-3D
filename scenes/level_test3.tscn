@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://cf7ucd5sdno45"]
+
+[ext_resource type="Script" uid="uid://b7kkqg7ltstic" path="res://scripts/map.gd" id="1_uts22"]
+[ext_resource type="PackedScene" uid="uid://dlipi6006gx3l" path="res://scenes/level_node.tscn" id="2_5lfic"]
+[ext_resource type="PackedScene" uid="uid://c1sld4gohobaj" path="res://scenes/player.tscn" id="3_0j41j"]
+[ext_resource type="MeshLibrary" uid="uid://dbhge4m52dsq3" path="res://tileset_test.tres" id="4_mbwdl"]
+[ext_resource type="PackedScene" uid="uid://cbelu3nopudpv" path="res://scenes/finish_flag.tscn" id="5_ljp7n"]
+[ext_resource type="PackedScene" uid="uid://itoejoa45vye" path="res://scenes/checkpoint_flag.tscn" id="6_6vu18"]
+
+[node name="LevelTest" type="Node3D"]
+script = ExtResource("1_uts22")
+
+[node name="LevelNode" parent="." instance=ExtResource("2_5lfic")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.78189, 0)
+
+[node name="Player" parent="." instance=ExtResource("3_0j41j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0929976, 0.160722, -0.11406)
+rolling_force = 15
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="GridMap" type="GridMap" parent="Map"]
+mesh_library = ExtResource("4_mbwdl")
+cell_size = Vector3(0.99, 0.125, 0.99)
+data = {
+"cells": PackedInt32Array(0, 0, 36, 65535, 0, 1441800, 65535, 65535, 655368, 0, 65535, 1048584, 0, 1, 44, 0, 2, 37, 65535, 2, 655397, 65535, 3, 655396, 65535, 4, 1441829, -262144, 4, 1441819, -262143, 4, 37, -262144, 3, 1441802, -262143, 3, 36, -262143, 2, 655420, -262143, 1, 655372, -262142, 1, 37, -262142, 0, 19, -262142, 65535, 655394, -262143, 65535, 655360, -262143, 0, 655360, -524285, 65535, 1441819, -524284, 65535, 1048588, -524284, 0, 44, -524284, 2, 35, -524285, 2, 655394, -524285, 3, 655404, -524284, 1, 655420, -524285, 1, 0, -524285, 0, 0, -524285, 4, 30, -524285, 5, 8, -524286, 5, 1441814, -524287, 5, 655394, -524287, 7, 655371, -524287, 6, 655385, -524287, 8, 655385, -524287, 9, 1441826, -786430, 9, 1441818, -786429, 9, 1048597, -786428, 9, 37, -786428, 8, 44, -786428, 7, 1441815, -786428, 6, 655390, -786428, 5, 655394, -786427, 5, 33, -786427, 4, 6, -786427, 3, 44, -786429, 6, 1441792, -786429, 8, 1441792, -786427, 2, 655373, -786427, 1, 655368, -786426, 1, 1048588, -786426, 2, 1441800, -786425, 2, 1048610, -786425, 3, 22, -786425, 4, 16, -786429, 7, 1441792, -524286, 2, 655360, -524286, 3, 655360, -524286, 4, 655360, -786428, 4, 655360, -786428, 3, 655360, -786429, 5, 1441792, -786428, 1, 1441792, -786428, 2, 1441792, -786425, 1, 1441792, -720893, 8, 1441839, -720893, 6, 1441839, -720892, 3, 1441839, -720893, 7, 1441846, -458750, 3, 1441846, -458749, 1, 1441847, -524288, 5, 1441792, -524288, 9, 1441792, -524288, 7, 1441792, -458752, 7, 1441841, -458752, 9, 1048631, -458752, 5, 1048633, 65535, 1, 0, 65535, 65534, 0, 0, 65534, 0, 65534, 65534, 0, 65534, 65535, 0, 65534, 0, 0, 65534, 1, 0, 65534, 3, 0, 131070, 1, 1441841, 131070, 65534, 1441841, 131070, 0, 1441817, 131070, 65535, 1441817, 65536, 65534, 655407)
+}
+metadata/_editor_floor_ = Vector3(0, -4, 0)
+
+[node name="FinishFlag" parent="Map" instance=ExtResource("5_ljp7n")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 7.422205, -1.3569696, 4.45284)
+
+[node name="CheckpointFlag" parent="Map" instance=ExtResource("6_6vu18")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.427217, -0.8540059, 5.3943605)
