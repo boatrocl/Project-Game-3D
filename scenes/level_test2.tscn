@@ -32,6 +32,7 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="FinishFlag" parent="Map" instance=ExtResource("5_fmshr")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -27.2248, 0.138009, -2.43247)
+next_scene_path_name = "res://scenes/level_test4.tscn"
 
 [node name="CheckpointFlag" parent="Map" instance=ExtResource("6_7a7yo")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -14.5583, 0.1258, -2.50766)
