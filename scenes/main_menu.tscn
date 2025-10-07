@@ -96,14 +96,13 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -235.0
-offset_top = -507.99997
+offset_top = -508.0
 offset_right = 835.0
 offset_bottom = 537.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 stream = ExtResource("3_bqqt6")
-speed_scale = 0.767
 autoplay = true
 loop = true
 

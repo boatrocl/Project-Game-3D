@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cf7ucd5sdno45"]
+[gd_scene load_steps=8 format=3 uid="uid://cf7ucd5sdno45"]
 
 [ext_resource type="Script" uid="uid://b7kkqg7ltstic" path="res://scripts/map.gd" id="1_uts22"]
 [ext_resource type="PackedScene" uid="uid://dlipi6006gx3l" path="res://scenes/level_node.tscn" id="2_5lfic"]
@@ -6,6 +6,7 @@
 [ext_resource type="MeshLibrary" uid="uid://dbhge4m52dsq3" path="res://tileset_test.tres" id="4_mbwdl"]
 [ext_resource type="PackedScene" uid="uid://cbelu3nopudpv" path="res://scenes/finish_flag.tscn" id="5_ljp7n"]
 [ext_resource type="PackedScene" uid="uid://itoejoa45vye" path="res://scenes/checkpoint_flag.tscn" id="6_6vu18"]
+[ext_resource type="AudioStream" uid="uid://c243ubqh6yv3x" path="res://sound/FastFeelBananaPeel-320bit(chosic.com).mp3" id="7_5lfic"]
 
 [node name="LevelTest" type="Node3D"]
 script = ExtResource("1_uts22")
@@ -35,3 +36,8 @@ next_scene_path_name = "res://scenes/level_test2.tscn"
 
 [node name="CheckpointFlag" parent="Map" instance=ExtResource("6_6vu18")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.42722, -0.854006, 5.39436)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_5lfic")
+autoplay = true
+parameters/looping = true

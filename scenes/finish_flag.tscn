@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbelu3nopudpv"]
+[gd_scene load_steps=6 format=3 uid="uid://cbelu3nopudpv"]
 
 [ext_resource type="PackedScene" uid="uid://b6i0agc7dc0li" path="res://assets/kenney_minigolf-kit/Models/GLB format/flag-red.glb" id="1_5nbog"]
-[ext_resource type="Script" uid="uid://dlxy22y2gjak2" path="res://Scripts/finish_flag.gd" id="2_07gpw"]
+[ext_resource type="Script" uid="uid://dlxy22y2gjak2" path="res://scripts/finish_flag.gd" id="2_07gpw"]
 [ext_resource type="PackedScene" uid="uid://s302c21yyqem" path="res://scenes/particles/confetti.tscn" id="3_i124s"]
+[ext_resource type="AudioStream" uid="uid://13hfnds8tgwh" path="res://sound/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3" id="4_j5irn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_07gpw"]
 size = Vector3(0.2, 0.2, 0.2)
@@ -18,5 +19,8 @@ script = ExtResource("2_07gpw")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.98023e-08, -0.180677, 2.98023e-08)
 shape = SubResource("BoxShape3D_07gpw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource("4_j5irn")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

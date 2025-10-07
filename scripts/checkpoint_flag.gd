@@ -11,5 +11,6 @@ func _ready() -> void:
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player") and checked == false:
 		GameManager.spawnpoint = $Spawnpoint.global_position
+		$AudioStreamPlayer.play()
 		$Confetti.make_confetti()
 		checked = true
