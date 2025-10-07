@@ -21,8 +21,9 @@ GameManager="*res://scripts/GameManager.gd"
 
 [display]
 
-window/size/mode=3
 window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+window/stretch/scale=1.5
 
 [global_group]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c4cqdt2hdmyme"]
 
 [ext_resource type="FontFile" uid="uid://bjpcq3eamka67" path="res://omelette_font/assets/ttf/om_thick_plain.ttf" id="1_dy3ie"]
-[ext_resource type="Script" uid="uid://d3gey34mpnbkd" path="res://Scripts/gameover.gd" id="2_2mkfd"]
+[ext_resource type="Script" uid="uid://d3gey34mpnbkd" path="res://scripts/gameover.gd" id="2_2mkfd"]
 [ext_resource type="AudioStream" uid="uid://caowemwdy25m0" path="res://sound/game-music-loop-7-145285.mp3" id="3_2mkfd"]
 
 [sub_resource type="Theme" id="Theme_h8i2o"]
@@ -32,13 +32,15 @@ color = Color(1, 1, 1, 0)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -321.0
-offset_top = -179.0
-offset_right = 1559.0
-offset_bottom = 861.0
+anchors_preset = -1
+anchor_left = -0.279
+anchor_top = -0.27600002
+anchor_right = 2.3530002
+anchor_bottom = 2.329
+offset_left = 0.40802002
+offset_top = -0.15197754
+offset_right = 0.34375
+offset_bottom = -0.1920166
 grow_horizontal = 2
 grow_vertical = 2
 stream = SubResource("VideoStreamTheora_dy3ie")

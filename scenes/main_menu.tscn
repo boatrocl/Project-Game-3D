@@ -135,7 +135,6 @@ text = "PRESS ANY BUTTON TO START"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(963, 577)
-scale = Vector2(1.4, 1.4)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_wu84c")
