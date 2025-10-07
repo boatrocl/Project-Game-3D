@@ -23,24 +23,21 @@ script = ExtResource("2_2mkfd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
 grow_horizontal = 2
-grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.279
-anchor_top = -0.27600002
-anchor_right = 2.3530002
-anchor_bottom = 2.329
-offset_left = 0.40802002
-offset_top = -0.15197754
-offset_right = 0.34375
-offset_bottom = -0.1920166
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -937.0
+offset_top = -634.0
+offset_right = 983.0
+offset_bottom = 446.0
 grow_horizontal = 2
 grow_vertical = 2
 stream = SubResource("VideoStreamTheora_dy3ie")
@@ -52,10 +49,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -228.0
-offset_top = 140.0
-offset_right = 228.0
-offset_bottom = 218.0
+offset_left = -208.0
+offset_top = -421.0
+offset_right = 248.0
+offset_bottom = -343.0
 grow_horizontal = 2
 text = "You beat the game!
 
@@ -94,21 +91,19 @@ text = "Main Menu"
 
 [node name="FinishTime" type="Label" parent="ColorRect"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -108.0
-offset_top = -54.0
-offset_right = 108.0
-offset_bottom = -30.0
+offset_left = -113.0
+offset_top = -596.0
+offset_right = 103.0
+offset_bottom = -572.0
 grow_horizontal = 2
-grow_vertical = 2
 text = "00:00:000"
 horizontal_alignment = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -647)
 anchor_mode = 0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

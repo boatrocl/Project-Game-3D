@@ -11,18 +11,13 @@ config_version=5
 [application]
 
 config/name="Project Game 3D"
-run/main_scene="uid://chxtawd6j0tn3"
+run/main_scene="uid://c4cqdt2hdmyme"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*res://scripts/GameManager.gd"
-
-[display]
-
-window/stretch/mode="viewport"
-window/stretch/aspect="ignore"
 
 [global_group]
 
