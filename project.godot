@@ -21,7 +21,6 @@ GameManager="*res://scripts/GameManager.gd"
 
 [display]
 
-window/size/window_width_override=1280
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
