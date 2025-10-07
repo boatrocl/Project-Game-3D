@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://itoejoa45vye"]
 
 [ext_resource type="PackedScene" uid="uid://dn8fn3rf5v1x8" path="res://assets/kenney_minigolf-kit/Models/GLB format/flag-blue.glb" id="1_lrk0d"]
-[ext_resource type="Script" uid="uid://bm1s734ty15i8" path="res://scripts/checkpoint_flag.gd" id="2_sj8yo"]
+[ext_resource type="Script" uid="uid://bm1s734ty15i8" path="res://Scripts/checkpoint_flag.gd" id="2_sj8yo"]
 [ext_resource type="PackedScene" uid="uid://s302c21yyqem" path="res://scenes/particles/confetti.tscn" id="3_4eoee"]
 [ext_resource type="AudioStream" uid="uid://b0uoppxfvbcgi" path="res://sound/goodresult-82807.mp3" id="4_wtrfk"]
 

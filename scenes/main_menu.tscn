@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://chxtawd6j0tn3"]
 
 [ext_resource type="FontFile" uid="uid://bjpcq3eamka67" path="res://omelette_font/assets/ttf/om_thick_plain.ttf" id="1_ekxnf"]
-[ext_resource type="Script" uid="uid://brwxayvdl5gsf" path="res://scripts/home_ui.gd" id="2_bqqt6"]
+[ext_resource type="Script" uid="uid://brwxayvdl5gsf" path="res://Scripts/home_ui.gd" id="2_bqqt6"]
 [ext_resource type="VideoStream" uid="uid://dh76tyc6kdd7m" path="res://omelette_font/BackgroundHome/mainmenumusic-gpfpwt.ogv" id="3_bqqt6"]
 [ext_resource type="AudioStream" uid="uid://cv7rjwl8ljcfh" path="res://omelette_font/BackgroundHome/relaxing-guitar-loop-2-398647.mp3" id="4_wu84c"]
 
@@ -68,17 +68,17 @@ offset_bottom = 131.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
 text = "THUNDER
-  BOLT"
+  BALL"
 
 [node name="Light" type="Label" parent="ColorRect/Label/The game NAME"]
 layout_mode = 0
 offset_left = -5.0
 offset_right = 450.0
 offset_bottom = 135.0
-theme_override_colors/font_color = Color(0.947918, 0.9479181, 1.540184e-06, 1)
+theme_override_colors/font_color = Color(0.947918, 0.947918, 1.54018e-06, 1)
 theme_override_font_sizes/font_size = 65
 text = "THUNDER
-  BOLT"
+  BALL"
 
 [node name="TEXT" type="Label" parent="ColorRect/Label/The game NAME"]
 layout_mode = 0
@@ -87,7 +87,7 @@ offset_bottom = 21.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 65
 text = "THUNDER
-  BOLT"
+  BALL"
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect/Label"]
 show_behind_parent = true
