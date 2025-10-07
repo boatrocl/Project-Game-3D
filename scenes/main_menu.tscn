@@ -28,8 +28,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1.0
-offset_right = -1.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 4.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0)
@@ -130,7 +132,7 @@ theme_override_font_sizes/font_size = 35
 text = "PRESS ANY BUTTON TO START"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(580, 326)
+position = Vector2(963, 571)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_wu84c")
