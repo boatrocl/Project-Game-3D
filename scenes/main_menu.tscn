@@ -25,13 +25,13 @@ script = ExtResource("2_bqqt6")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.623
-anchor_right = 0.623
-offset_left = -378.69604
-offset_top = -45.0
-offset_right = -378.69604
-offset_bottom = -45.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -186.0
+offset_top = -14.0
+offset_right = -186.0
+offset_bottom = -14.0
 grow_horizontal = 2
 color = Color(1, 1, 1, 0)
 
@@ -86,7 +86,6 @@ text = "THUNDER
   BALL"
 
 [node name="TEXT" type="Label" parent="ColorRect/Label/The game NAME"]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 21.0
@@ -101,10 +100,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -147.0
-offset_top = -477.0
-offset_right = 2125.857
-offset_bottom = 755.1428
+offset_left = -589.0
+offset_top = -181.99997
+offset_right = 406.71423
+offset_bottom = 860.1428
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
@@ -133,7 +132,7 @@ text = "PRESS ANY BUTTON TO START"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
-position = Vector2(394, -350)
+position = Vector2(392, -352)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_wu84c")
