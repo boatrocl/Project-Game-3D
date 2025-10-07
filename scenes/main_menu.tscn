@@ -96,7 +96,6 @@ text = "THUNDER
   BALL"
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect/Label"]
-visible = false
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
