@@ -86,7 +86,6 @@ text = "THUNDER
   BALL"
 
 [node name="TEXT" type="Label" parent="ColorRect/Label/The game NAME"]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 21.0
