@@ -65,7 +65,7 @@
 - ความสุข  ชนะเกมได้โดยไม่ต้องใช้ check point
 - **สิ่งที่ใช้กระตุ้นสัญชาติญาณ**
 - การเอาชีวิตรอด
-ต้องเอาชีวิตรอดจากการโจมตีของศัตรูและกับดัก
+- -
 - อยากสวมบทบาท (เป็นตัวละครในเกม)
 สวมบทบาทเป็นลูกบอล
 - สะสมสิ่งของ
@@ -107,7 +107,7 @@
  <img src="./README_IMAGE/Demo4.png" width="400"/>
 
 - VDO  (Link ไป clip vdo)
-https://drive.google.com/file/d/1wtPNrkPYFbdI7xgY3O5rWCsbI_CVsFmT/view?usp=sharing
+- https://drive.google.com/file/d/1wtPNrkPYFbdI7xgY3O5rWCsbI_CVsFmT/view?usp=sharing
 
 - อ้างอิงระบุแหล่งที่มาของ Source Code และ Asset ต่าง ๆ ที่ใช้
 - Template และ Assets นำมาจาก
