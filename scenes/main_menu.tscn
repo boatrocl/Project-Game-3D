@@ -14,14 +14,24 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -579.0
+offset_top = -322.0
+offset_right = -579.0
+offset_bottom = -322.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_l1wbr")
 script = ExtResource("2_bqqt6")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
 [node name="Label" type="Label" parent="ColorRect"]
