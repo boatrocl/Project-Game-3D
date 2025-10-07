@@ -26,10 +26,6 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -16.0
-offset_top = 2.0
-offset_right = -16.0
-offset_bottom = 2.0
 grow_horizontal = 2
 color = Color(1, 1, 1, 0)
 
@@ -64,7 +60,6 @@ Your finished time:"
 horizontal_alignment = 1
 
 [node name="NewGameButton" type="Button" parent="ColorRect"]
-visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -108,8 +103,8 @@ text = "00:00:000"
 horizontal_alignment = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, -647)
-anchor_mode = 0
+visible = false
+position = Vector2(576, -325)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_2mkfd")
