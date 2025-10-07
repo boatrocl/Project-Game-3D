@@ -22,7 +22,6 @@ GameManager="*res://scripts/GameManager.gd"
 [display]
 
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
 
 [global_group]
 
