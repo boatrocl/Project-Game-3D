@@ -89,6 +89,7 @@ text = "THUNDER
   BALL"
 
 [node name="TEXT" type="Label" parent="ColorRect/Label/The game NAME"]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 21.0
@@ -103,10 +104,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -257.0
-offset_top = -473.0
-offset_right = 685.85706
-offset_bottom = 566.28564
+offset_left = -147.0
+offset_top = -477.0
+offset_right = 848.71423
+offset_bottom = 565.1428
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
@@ -134,7 +135,7 @@ theme_override_font_sizes/font_size = 35
 text = "PRESS ANY BUTTON TO START"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(883, 573)
+position = Vector2(964, 573)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_wu84c")
