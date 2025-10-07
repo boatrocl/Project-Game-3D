@@ -28,6 +28,7 @@ func moving_ball(delta):
 		angular_velocity.z += rolling_force * delta
 	if Input.is_action_pressed("right"):
 		angular_velocity.z -= rolling_force * delta 
+
 	
 	#print(linear_velocity)
 

@@ -45,6 +45,50 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 34
 text = "PRESS ANY BUTTON TO START"
 
+[node name="The game NAME" type="Label" parent="ColorRect/Label"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -229.0
+offset_top = -401.0
+offset_right = 219.0
+offset_bottom = -270.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "THUNDER
+  BOLT"
+
+[node name="shadow" type="Label" parent="ColorRect/Label/The game NAME"]
+layout_mode = 0
+offset_left = 11.0
+offset_right = 459.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "THUNDER
+  BOLT"
+
+[node name="Light" type="Label" parent="ColorRect/Label/The game NAME"]
+layout_mode = 0
+offset_left = -5.0
+offset_right = 450.0
+offset_bottom = 135.0
+theme_override_colors/font_color = Color(0.947918, 0.9479181, 1.540184e-06, 1)
+theme_override_font_sizes/font_size = 65
+text = "THUNDER
+  BOLT"
+
+[node name="TEXT" type="Label" parent="ColorRect/Label/The game NAME"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 21.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 65
+text = "THUNDER
+  BOLT"
+
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect/Label"]
 show_behind_parent = true
 layout_mode = 1
