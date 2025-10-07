@@ -53,6 +53,7 @@ theme_override_font_sizes/font_size = 34
 text = "PRESS ANY BUTTON TO START"
 
 [node name="The game NAME" type="Label" parent="ColorRect/Label"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
