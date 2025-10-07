@@ -25,12 +25,12 @@ script = ExtResource("2_bqqt6")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -237.0
+anchors_preset = -1
+anchor_left = 0.623
+anchor_right = 0.623
+offset_left = -378.69604
 offset_top = -45.0
-offset_right = -237.0
+offset_right = -378.69604
 offset_bottom = -45.0
 grow_horizontal = 2
 color = Color(1, 1, 1, 0)
@@ -86,6 +86,7 @@ text = "THUNDER
   BALL"
 
 [node name="TEXT" type="Label" parent="ColorRect/Label/The game NAME"]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 21.0
