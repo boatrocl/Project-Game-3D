@@ -20,6 +20,7 @@ theme = SubResource("Theme_l1wbr")
 script = ExtResource("2_bqqt6")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 layout_mode = 1
 color = Color(1, 1, 1, 0)
 
