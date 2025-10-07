@@ -131,6 +131,7 @@ theme_override_font_sizes/font_size = 35
 text = "PRESS ANY BUTTON TO START"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 position = Vector2(394, -350)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
